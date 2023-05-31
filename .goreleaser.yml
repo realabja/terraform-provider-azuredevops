@@ -18,16 +18,6 @@ checksum:
       name_template: '{{ .ProjectName }}_{{ .Version }}_manifest.json'
   name_template: '{{ .ProjectName }}_{{ .Version }}_SHA256SUMS'
   algorithm: sha256
-signs:
-  - artifacts: checksum
-    args:
-      - "--batch"
-      - "--local-user"
-      - "9A49181AB259D5F3DC88A7D38609CC23808237A8" # set this environment variable for your signing key
-      - "--output"
-      - "${signature}"
-      - "--detach-sign"
-      - "${artifact}"
 snapshot:
   name_template: "terraform-provider-azuredevops"
 changelog:
@@ -38,5 +28,5 @@ changelog:
     - '^test:'
 release:
   github:
-    owner: realabja
+    owner: microsoft
     name: terraform-provider-azuredevops
