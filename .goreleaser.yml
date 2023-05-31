@@ -23,7 +23,7 @@ signs:
     args:
       - "--batch"
       - "--local-user"
-      - "{{ .Env.GPG_FINGERPRINT }}" # set this environment variable for your signing key
+      - "9A49181AB259D5F3DC88A7D38609CC23808237A8" # set this environment variable for your signing key
       - "--output"
       - "${signature}"
       - "--detach-sign"
