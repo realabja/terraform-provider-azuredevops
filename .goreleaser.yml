@@ -28,5 +28,5 @@ changelog:
     - '^test:'
 release:
   github:
-    owner: microsoft
+    owner: realabja
     name: terraform-provider-azuredevops
