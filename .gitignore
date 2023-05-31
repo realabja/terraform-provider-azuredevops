@@ -2,6 +2,7 @@
 #direnv files
 .envrc
 bin/
+.goreleaser.yml
 
 terraform-provider-azure-devops
 terraform.log
